@@ -1,0 +1,130 @@
+@keyframes tada
+    from
+        transform: scale3d(1,1,1)
+
+    10%, 20%
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+    30%, 50%, 70%, 90%
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    40%, 60%, 80%
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+    to
+        transform: scale3d(1,1,1)
+
+.animation
+    animation-name: tada
+    animation-duration: 1s
+    animation-fill-mode: both
+    z-index: 2
+
+.section-article
+    background-color: #fff
+    height: 400px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
+    .col-3
+        flex: 1
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+
+        flex-direction: row
+        flex-wrap: wrap
+
+        .articles-wall
+            flex-grow: 1
+            height: 33.33%
+            width: 25%
+            transition: all 0.3s ease-in-out
+            transform: translateX(-20px)
+            opacity: 0
+
+
+            &.is-showing
+                opacity: 1
+                transform: translateX(0px)
+
+
+        #pic-1
+            background: url('../images/ar-1.png') center center no-repeat
+            background-size: cover
+        #pic-2
+            background: url('../images/ar-2.jpg') center center no-repeat
+            background-size: cover
+        #pic-3
+            background: url('../images/ar-3.jpg') center center no-repeat
+            background-size: cover
+        #pic-4
+            background: url('../images/ar-4.jpg') center center no-repeat
+            background-size: cover
+        #pic-5
+            background: url('../images/ar-5.jpg') center center no-repeat
+            background-size: cover
+        #pic-6
+            background: url('../images/ar-6.png') center center no-repeat
+            background-size: cover
+        #pic-7
+            background: url('../images/ar-7.jpg') center center no-repeat
+            background-size: cover
+        #pic-8
+            background: url('../images/ar-8.png') center center no-repeat
+            background-size: cover
+        #pic-9
+            background: url('../images/ar-9.png') center center no-repeat
+            background-size: cover
+        #pic-10
+            background: url('../images/ar-10.jpg') center center no-repeat
+            background-size: cover
+        #pic-11
+            background: url('../images/ar-11.png') center center no-repeat
+            background-size: cover
+        #pic-12
+            background: url('../images/ar-12.png') center center no-repeat
+            background-size: cover
+
+
+
+
+
+
+    .col-4
+        flex: 1
+        background: url('../images/articles-wall.jpg') center center no-repeat
+        background-size: cover
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        h2
+
+            line-height: 1.2
+            font-size: 34px
+            font-weight: 500
+            opacity: 0.7
+
+
+
+        button
+            background-color: #3d96cb
+            border: none
+            outline: none
+            padding: 10px 50px
+            font-size: 30px
+            color: white
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2)
+            transition: all 0.3s ease
+
+            &:hover
+                box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.4)
